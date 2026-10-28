@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Countdown Timer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light d-flex align-items-center min-vh-100">
+    
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                
+                <!-- Card principale -->
+                <div class="card shadow border-0 p-4 rounded-4">
+                    <h2 class="text-center mb-4 text-primary fw-bold">Countdown Timer</h2>
+                    
+                    <!-- Input section -->
+                    <div class="mb-3">
+                        <label for="inputNumber" class="form-label fw-semibold">Inserisci i secondi:</label>
+                        <input type="number" id="inputNumber" class="form-control form-control-lg text-center" placeholder="Es. 10" min="1">
+                        <div class="form-text text-center">Inserisci un numero maggiore di 0</div>
+                    </div>
+                    
+                    <!-- Display Secondi -->
+                    <div class="text-center my-4">
+                        <span id="countdownDisplay" class="display-1 fw-bold text-dark">0</span>
+                        <p class="text-muted text-uppercase small">Secondi</p>
+                    </div>
+                    
+                    <!-- Buttons section (Start/Pause e Azzera) -->
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button type="button" id="btnStartPause" class="btn btn-success btn-lg flex-fill">Start</button>
+                        <button type="button" id="btnReset" class="btn btn-danger btn-lg flex-fill">Azzera</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- JS custom -->
+    <script src="main.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
